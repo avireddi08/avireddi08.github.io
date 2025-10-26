@@ -29,8 +29,9 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mt-4">
           {/* Resume Button */}
           <motion.a
-            href="src\assets\Avishka_Reddi_Resume.pdf"
+            href="/Avishka_Reddi_Resume.pdf"
             download="Avishka_Reddi_Resume.pdf"
+            target="_blank"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="flex items-center justify-center gap-2 bg-accent px-6 py-3 rounded-lg text-white font-medium shadow-lg hover:bg-accent/90 transition"
