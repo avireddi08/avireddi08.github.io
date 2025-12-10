@@ -7,7 +7,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 py-4 px-6 md:px-16 flex justify-between items-center bg-transparent">
+    <nav className="fixed top-0 left-0 w-full z-50 py-4 px-6 md:px-16 flex justify-between items-center bg-gray-900 shadow-md">
       {/* Logo / Name */}
       <a href="#hero" className="text-2xl font-bold text-accent hover:text-accent transition">
         AVISHKA REDDI

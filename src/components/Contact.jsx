@@ -77,12 +77,6 @@ export default function Contact() {
 
       {/* Contact Info + Icons */}
       <div className="flex flex-col items-center gap-4 mt-8">
-        <div className="flex items-center gap-2 text-gray-200">
-          <FaEnvelope className="text-accent" />
-          <a href="mailto:avireddi15@gmail.com" className="hover:text-accent transition">
-            Email
-          </a>
-        </div>
         <div className="flex items-center gap-6 mt-2">
           <a
             href={"https://www.linkedin.com/in/avireddi08/"}

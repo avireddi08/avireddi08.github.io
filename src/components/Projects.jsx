@@ -3,16 +3,6 @@ import React from 'react';
 export default function Projects() {
   const projects = [
     {
-      name: 'Nutrivision – AI-Powered Food Classifier & Nutrition Tracker',
-      desc: 'Built a transfer learning-based food classifier using MobileNetV2, achieving > 85% accuracy. Integrated a Streamlit UI, food diary, and nutrition tracking system for calories, macros, fiber, sodium, and cholesterol.',
-      link: "https://github.com/avireddi08/Nutrivision"
-    },
-    {
-      name: 'Turf Booking Mobile App',
-      desc: 'Developed a Flutter app for real-time turf booking with secure authentication, slot management, feedback/reviews, and an admin panel for managing tournaments, users, and payments.',
-      link: "https://github.com/avireddi08/TURF_BOOKING_APP"
-    },
-    {
       name: 'Online Auction Platform',
       desc: 'Built a MERN-based online auction platform with real-time bidding, user authentication, centralized database, and auction management features.',
       link: "https://github.com/avireddi08/online-auction-platform"
@@ -26,6 +16,16 @@ export default function Projects() {
       name: 'AI-driven Telemedicine System',
       desc: 'Developed an AI system for automated patient follow-ups, lung cancer severity prediction, and medical summary generation with an interactive dashboard for dataset insights.',
       link: "https://github.com/avireddi08/AI_DRIVEN_TELEMEDICINE_SYSTEM"
+    },
+    {
+      name: 'Nutrivision – AI-Powered Food Classifier & Nutrition Tracker',
+      desc: 'Built a transfer learning-based food classifier using MobileNetV2, achieving > 85% accuracy. Integrated a Streamlit UI, food diary, and nutrition tracking system for calories, macros, fiber, sodium, and cholesterol.',
+      link: "https://github.com/avireddi08/Nutrivision"
+    },
+    {
+      name: 'Turf Booking Mobile App',
+      desc: 'Developed a Flutter app for real-time turf booking with secure authentication, slot management, feedback/reviews, and an admin panel for managing tournaments, users, and payments.',
+      link: "https://github.com/avireddi08/TURF_BOOKING_APP"
     }
   ];
 

@@ -8,14 +8,3 @@ logs/
 # Temporary files
 *.tmp
 *.swp
-
-# Build output (if any)
-dist/
-build/
-
-# IDE specific files (example for VSCode)
-.vscode/
-
-# OS-specific files
-.DS_Store
-Thumbs.db
