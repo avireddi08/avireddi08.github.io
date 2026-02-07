@@ -5,7 +5,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/',        // root since repo is <username>.github.io
+  publicDir: 'public',
   build: {
-    sourcemap: false
+    sourcemap: false,
+    outDir: 'dist'
+  },
+  server: {
+    open: true
   }
 })
