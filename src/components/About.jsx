@@ -7,9 +7,9 @@ export default function About() {
         <h2 className="text-4xl md:text-5xl font-bold text-accent mb-12 text-center fade-in-up">About Me</h2>
         <div className="bg-[#161b22] rounded-2xl p-8 md:p-12 border border-accent/40 hover:border-accent/80 transition-all duration-300 fade-in-up shadow-lg">
           <p className="text-white text-lg leading-relaxed text-center space-y-6">
-            I'm an <span className="text-white font-semibold">enthusiastic developer</span> with a strong foundation in software development, specializing in <span className="text-white font-semibold">MERN Stack</span> and <span className="text-white font-semibold">AI/ML technologies</span>.
+            I am a Computer Science and Engineering undergraduate with an Honors specialization in AI & Machine Learning from Walchand Institute of Technology, Solapur. I’m passionate about building real-world software solutions by combining full-stack development and machine learning.
             <br /><br />
-            I love building products that make a <span className="text-white font-semibold">real impact</span> and continuously improving my craft through learning and hands-on experience.
+            I have worked on projects including a real-time online auction platform, an AI-driven telemedicine system, and an AI-powered nutrition tracking application, along with a Flutter-based mobile app. I have a strong foundation in Java and Python, experience with MySQL, Git, and GitHub, and I’m eager to learn and grow as a software engineer.
           </p>
         </div>
       </div>

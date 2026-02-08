@@ -21,17 +21,19 @@ export default function Hero() {
         className="flex-1 text-center md:text-left relative z-10"
       >
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-4 text-white leading-tight">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 text-white leading-tight">
           Hi, I'm{' '}
           <span className="text-accent">Avishka Reddi</span>
         </h1>
         
-        <h2 className="text-xl md:text-2xl text-accent mb-6 font-semibold">
-          Full Stack Developer & AI/ML Enthusiast
+        <h2 className="text-lg md:text-xl text-accent mb-6 font-semibold">
+          Software Developer | Full Stack & AI/ML Enthusiast
         </h2>
         
-        <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-md mx-auto md:mx-0 leading-relaxed">
-          Building innovative solutions with <span className="text-accent font-semibold">React, Node.js,</span> and <span className="text-accent font-semibold">Machine Learning.</span> Passionate about creating impactful technology.
+        <p className="text-base md:text-lg text-gray-300 mb-8 max-w-md mx-auto md:mx-0 leading-relaxed">
+          A highly motivated and organized individual seeking an entry level
+          role to apply my skills in building innovative, scalable,
+          and cost-effective technology solutions.
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mt-8">

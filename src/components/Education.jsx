@@ -3,28 +3,24 @@ import React from 'react';
 export default function Education() {
   const educationData = [
     {
-      level: '1st Graduation (Bachelor\u2019s Degree)',
-      institution: 'Your University Name',
-      field: 'Computer Science / Engineering',
-      duration: '2020 - 2024',
-      cgpa: '8.5 CGPA',
-      details: 'Specialized in Full Stack Development, Data Structures, and Algorithms'
+      level: 'B.Tech.',
+      institution: 'Walchand Institute Of Technology, Solapur',
+      field: 'Computer Science & Engineering',
+      duration: '2022 - 2026',
+      cgpa: '9.76 CGPA',
+      details: 'Honors in AI/ML'
     },
     {
-      level: '12th Grade (Senior Secondary)',
-      institution: 'Your School Name',
-      field: 'Science Stream',
-      duration: '2018 - 2020',
-      cgpa: '95%',
-      details: 'Focused on Physics, Chemistry, and Mathematics'
+      level: 'HSC',
+      institution: 'D.H.B. Soni College, Solapur',
+      duration: '2021 - 2022',
+      cgpa: '85%',
     },
     {
-      level: '10th Grade (Secondary)',
-      institution: 'Your School Name',
-      field: 'General Education',
-      duration: '2016 - 2018',
-      cgpa: '92%',
-      details: 'Comprehensive education in core subjects and languages'
+      level: 'SSC',
+      institution: 'Jnana Prabodhini Prashala, Solapur',
+      duration: '2019 - 2020',
+      cgpa: '96.40%',
     }
   ];
 
@@ -42,8 +38,8 @@ export default function Education() {
             {/* Header */}
             <div className="relative z-10 mb-4">
               <div className="flex items-center gap-3 mb-2">
-                <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center">
-                  <span className="text-accent font-bold">{index + 1}</span>
+                <div className="w-10 h-8 bg-accent/20 rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 bg-accent rounded-full"></div>
                 </div>
                 <h3 className="text-lg font-bold text-accent">{edu.level}</h3>
               </div>
@@ -80,7 +76,7 @@ export default function Education() {
           {educationData.map((edu, index) => (
             <div key={index} className="mb-8 ml-20">
               <div className="absolute left-0 w-9 h-9 bg-accent/20 rounded-full flex items-center justify-center border-2 border-accent">
-                <span className="text-accent font-bold text-sm">{index + 1}</span>
+                <div className="w-1.5 h-1.5 bg-accent rounded-full"></div>
               </div>
               <div className="bg-[#161b22] border border-accent/40 rounded-lg p-4">
                 <h4 className="text-accent font-bold mb-1">{edu.level}</h4>

@@ -44,7 +44,7 @@ export default function Skills() {
 
   return (
     <section id="skills" className="py-20 bg-gray-900">
-      <h2 className="text-4xl md:text-5xl font-bold text-accent mb-12 text-center fade-in-up">Skills & Expertise</h2>
+      <h2 className="text-4xl md:text-5xl font-bold text-accent mb-12 text-center fade-in-up">Skills</h2>
 
       {/* Technical Skills */}
       <div className="mb-16">
