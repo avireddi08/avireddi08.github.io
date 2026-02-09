@@ -63,19 +63,18 @@ export default function Certifications() {
           <div className="flex transition-transform duration-500 ease-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
             {certifications.map((cert, index) => (
               <div key={index} className="w-full flex-shrink-0 px-4 fade-in-up">
-                <div className="bg-[#161b22] rounded-2xl p-8 border-2 border-accent/30 hover:border-accent transition-all duration-300 text-gray-300">
+                <div className="bg-gray-800 rounded-2xl p-8 border-2 border-emerald-400/20 hover:border-accent transition duration-300 text-gray-300">
                   {/* Title and Info */}
                   <div className="mb-6">
                     <h3 className="text-2xl font-bold text-accent mb-2">{cert.title}</h3>
                     <p className="text-gray-300 font-semibold text-sm mb-3">{cert.issuer}</p>
-                    <div className="flex items-center gap-2">
-                      <span className="text-accent text-lg">📅</span>
+                    <div className="flex items-center">
                       <p className="text-gray-300 font-semibold">{cert.date}</p>
                     </div>
                   </div>
 
                   {/* Verify Button */}
-                  <a href={cert.certificateUrl} target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-2 bg-accent text-gray-900 font-semibold rounded-lg hover:bg-accent/90 transition-all duration-300">
+                  <a href={cert.certificateUrl} target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-2 bg-accent text-gray-900 font-semibold rounded-lg hover:bg-accent/90 transition hover:scale-105 duration-300">
                     Verify Credential →
                   </a>
                 </div>
@@ -85,10 +84,10 @@ export default function Certifications() {
         </div>
 
         {/* Navigation Buttons */}
-        <button onClick={prevSlide} className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 md:-translate-x-16 bg-accent/20 hover:bg-accent/40 border border-accent text-accent p-3 rounded-full transition-all duration-300 transform hover:scale-110">
+        <button onClick={prevSlide} className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 md:-translate-x-16 bg-gray-800 border border-accent text-accent p-3 rounded-full transition duration-300 transform hover:scale-110">
           <IoArrowBack size={24} />
         </button>
-        <button onClick={nextSlide} className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 md:translate-x-16 bg-accent/20 hover:bg-accent/40 border border-accent text-accent p-3 rounded-full transition-all duration-300 transform hover:scale-110">
+        <button onClick={nextSlide} className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 md:translate-x-16 bg-gray-800 border border-accent text-accent p-3 rounded-full transition duration-300 transform hover:scale-110">
           <IoArrowForward size={24} />
         </button>
 
@@ -107,7 +106,7 @@ export default function Certifications() {
             <h3 className="text-lg font-bold text-accent mb-2">{cert.title}</h3>
             <p className="text-sm text-gray-300 font-semibold mb-3">{cert.issuer}</p>
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-accent text-lg">📅</span>
+              <span className="text-accent text-lg"></span>
               <p className="text-gray-300 font-semibold text-sm">{cert.date}</p>
             </div>
             <a href={cert.certificateUrl} target="_blank" rel="noopener noreferrer" className="w-full block text-center px-4 py-2 bg-accent text-gray-900 rounded-lg hover:bg-accent/90 transition-all duration-300 font-semibold text-sm">

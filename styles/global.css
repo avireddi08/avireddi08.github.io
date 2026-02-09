@@ -4,13 +4,13 @@
 
 /* Dark Mode Colors - Default for entire site */
 :root {
-  --accent-color: #fa7821;
+  --accent-color: #64ffda;
   --bg-primary: #0f172a;
   --bg-secondary: #111827;
   --bg-card: #161b22;
   --text-primary: #f3f4f6;
   --text-secondary: #d1d5db;
-  --border-color: #374151;
+  --border-color: #2f3847;
 }
 
 html {
@@ -80,8 +80,8 @@ section::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 20% 50%, rgba(255, 102, 0, 0.05) 0%, transparent 50%),
-              radial-gradient(circle at 80% 80%, rgba(255, 102, 0, 0.03) 0%, transparent 50%);
+  background: radial-gradient(circle at 20% 50%, rgba(0, 0, 0, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(0, 0, 0, 0.05) 0%, transparent 50%);
   pointer-events: none;
   z-index: 0;
 }
@@ -107,17 +107,17 @@ section > * {
 /* Dark Mode - Orange Accent */
 html.dark .text-accent,
 html.dark .border-accent {
-  color: #ff6600 !important;
-  border-color: #ff6600 !important;
+  color: #64ffda !important;
+  border-color: #64ffda !important;
 }
 
 html.dark .bg-accent {
-  background-color: #ff6600 !important;
+  background-color: #64ffda !important;
 }
 
 html.dark .hover\:text-accent:hover,
 html.dark .hover\:border-accent:hover {
-  color: #ff8533 !important;
-  border-color: #ff8533 !important;
+  color: #64ffda !important;
+  border-color: #64ffda !important;
 }
 

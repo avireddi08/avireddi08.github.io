@@ -53,7 +53,7 @@ export default function Hero() {
             href="#contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center justify-center gap-2 border-2 border-accent px-8 py-3 rounded-lg text-accent font-bold hover:bg-accent/10 transition"
+            className="flex items-center justify-center gap-2 border-2 border-accent px-8 py-3 rounded-lg text-accent font-bold hover:bg-emerald-400/5 transition"
           >
             <FaEnvelope /> Get in Touch
           </motion.a>
@@ -70,18 +70,18 @@ export default function Hero() {
         className="flex-1 flex justify-center items-center relative z-10 mt-10 md:mt-0"
       >
         {/* Glow Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-accent/5 rounded-3xl blur-2xl"></div>
+        <div className="absolute inset-0 bg-gradient-to-br rounded-3xl blur-2xl"></div>
         
         {/* Main Image Container */}
         <div className="relative">
           {/* Decorative Frame */}
-          <div className="absolute -inset-4 bg-gradient-to-br from-accent/30 to-accent/10 rounded-3xl"></div>
+          <div className="absolute -inset-4 bg-gradient-to-br from-emerald-400/30 to-emerald-400/10 rounded-3xl"></div>
           
           {/* Image */}
           <img
             src={placeholder}
             alt="Headshot"
-            className="relative w-72 h-80 md:w-80 md:h-96 rounded-2xl object-cover shadow-2xl border-2 border-accent/50"
+            className="relative w-72 h-80 md:w-80 md:h-96 rounded-2xl object-cover shadow-2xl border-2 border-emerald-400/80"
           />
         </div>
       </motion.div>

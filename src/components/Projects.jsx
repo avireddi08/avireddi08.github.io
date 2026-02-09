@@ -24,13 +24,13 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-900">
+    <section id="projects" className="py-20 bg-gray-800/100">
       <h2 className="text-4xl md:text-5xl font-bold text-accent mb-12 text-center fade-in-up">Projects</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
         {projects.map((p, i) => (
           <div
             key={i}
-            className="group bg-gradient-to-br from-[#161b22] to-[#0d1117] p-6 rounded-lg border border-accent/30 hover:border-accent hover:shadow-lg hover:shadow-accent/30 transition-all transform hover:-translate-y-2 flex flex-col justify-between fade-in-up text-gray-300"
+            className="group bg-gradient-to-br from-[#161b22] to-[#0d1117] p-6 rounded-lg border border-emerald-400/30 hover:border-emerald-400/100 hover:shadow-lg hover:shadow-emerald-400/20 transition transform hover:-translate-y-2 flex flex-col justify-between fade-in-up text-gray-300"
             style={{ animationDelay: `${i * 0.1}s` }}
           >
             <div>
@@ -40,7 +40,7 @@ export default function Projects() {
               {/* Tech Stack Badges */}
               <div className="flex flex-wrap gap-2 mb-4">
                 {p.tech.map((t, idx) => (
-                  <span key={idx} className="px-2.5 py-1 text-xs font-semibold bg-accent/20 text-accent rounded-full border border-accent/40 hover:bg-accent/30 transition">
+                  <span key={idx} className="px-2.5 py-1 text-xs font-semibold bg-emerald-400/0 text-accent rounded-full border border-emerald-400/20 hover:bg-emerald-400/5 transition">
                     {t}
                   </span>
                 ))}
@@ -50,7 +50,7 @@ export default function Projects() {
               href={p.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-accent/20 hover:bg-accent/40 text-accent font-semibold rounded-lg transition-all border border-accent/50 hover:border-accent group"
+              className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-emerald-400/5 hover:bg-emerald-400/20 text-accent font-semibold rounded-lg transition border border-accent/50 hover:border-accent group"
             >
               <FaGithub className="group-hover:scale-110 transition" />
               View Project →

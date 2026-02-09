@@ -40,32 +40,32 @@ export default function Contact() {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="w-full max-w-md flex flex-col gap-4 bg-[#161b22] p-8 rounded-2xl border-2 border-accent/30 hover:border-accent transition-all duration-300 fade-in-up shadow-lg"
+        className="w-full max-w-md flex flex-col gap-4 bg-gray-800 p-8 rounded-2xl border-2 border-emerald-400/20 hover:border-accent transition duration-300 fade-in-up shadow-lg"
       >
         <input
           type="text"
           name="from_name"
           placeholder="Your Name"
           required
-          className="p-3 rounded-lg bg-[#0d1117] border border-accent/30 text-gray-300 placeholder-gray-500 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/30 transition"
+          className="p-3 rounded-lg bg-[#0d1117] border border-emerald-400/20 text-gray-300 placeholder-gray-500 focus:outline-none focus:border-emerald-400/100 focus:ring-1 focus:ring-emerald-400/20 transition"
         />
         <input
           type="email"
           name="from_email"
           placeholder="Your Email"
           required
-          className="p-3 rounded-lg bg-[#0d1117] border border-accent/30 text-gray-300 placeholder-gray-500 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/30 transition"
+          className="p-3 rounded-lg bg-[#0d1117] border border-emerald-400/20 text-gray-300 placeholder-gray-500 focus:outline-none focus:border-emerald-400/100 focus:ring-1 focus:ring-emerald-400/20 transition"
         />
         <textarea
           name="message"
           placeholder="Your Message"
           rows="5"
           required
-          className="p-3 rounded-lg bg-[#0d1117] border border-accent/30 text-gray-300 placeholder-gray-500 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/30 transition resize-none"
+          className="p-3 rounded-lg bg-[#0d1117] border border-emerald-400/20 text-gray-300 placeholder-gray-500 focus:outline-none focus:border-emerald-400/100 focus:ring-1 focus:ring-emerald-400/20 transition resize-none"
         ></textarea>
         <button
           type="submit"
-          className="bg-accent hover:bg-accent/90 text-gray-900 font-semibold py-3 px-6 rounded-lg transition transform hover:-translate-y-1 active:translate-y-0"
+          className="bg-accent hover:bg-accent/90 text-gray-900 font-semibold py-3 px-6 rounded-lg transition transform hover:scale-105 active:translate-y-0"
         >
           Send Message
         </button>

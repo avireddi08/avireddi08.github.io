@@ -43,7 +43,7 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" className="py-20 bg-gray-900">
+    <section id="skills" className="py-20 bg-gray-800">
       <h2 className="text-4xl md:text-5xl font-bold text-accent mb-12 text-center fade-in-up">Skills</h2>
 
       {/* Technical Skills */}
@@ -52,10 +52,14 @@ export default function Skills() {
         <div className="max-w-6xl mx-auto px-4 space-y-8">
           {technicalSkills.map((tech, i) => (
             <div key={i} className="fade-in-up" style={{ animationDelay: `${i * 0.1}s` }}>
-              <h4 className="text-lg font-semibold text-white mb-4 text-center">{tech.category}</h4>
+                <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="h-[2px] w-10 bg-emerald-400/60"></div>
+                <h4 className="text-xl font-bold text-white tracking-wide relative">{tech.category}</h4>
+                <div className="h-[2px] w-10 bg-emerald-400/60"></div>
+              </div>
               <div className="flex flex-wrap justify-center gap-3">
                 {tech.skills.map((skill, idx) => (
-                  <div key={idx} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#161b22] border border-accent/30 hover:border-accent/80 transition group">
+                  <div key={idx} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#161b22] border border-emerald-400/35 hover:scale-105 hover:border-emerald-400/100 transition group">
                     <span className="text-gray-300 font-semibold">{skill.name}</span>
                     <div className="flex items-center gap-1">
                       <span className={`text-xs px-2 py-1 rounded font-bold border ${getLevelColor(skill.level)}`}>
@@ -77,7 +81,7 @@ export default function Skills() {
           {softSkills.map((skill, index) => (
             <div
               key={index}
-              className="px-4 py-2 rounded-lg bg-[#161b22] border border-accent/30 hover:border-accent hover:shadow-lg hover:shadow-accent/20 transition cursor-pointer fade-in-up"
+              className="px-4 py-2 rounded-lg bg-[#161b22] border border-emerald-400/35 hover:scale-105 hover:border-emerald-400/100 transition group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <span className="text-gray-300 font-semibold block">{skill.name}</span>
