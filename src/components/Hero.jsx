@@ -39,18 +39,16 @@ export default function Hero() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mt-8">
           
-          {/* Resume */}
           <motion.a
             href="/Avishka_Reddi_Resume.pdf"
             download="Avishka_Reddi_Resume.pdf"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center justify-center gap-2 bg-accent hover:bg-accent/90 px-8 py-3 rounded-lg text-gray-900 font-bold shadow-lg transition"
+            className="flex items-center justify-center gap-2 bg-accent hover:bg-accent/90 px-8 py-3 rounded-lg text-gray-900 font-bold transition"
           >
             <FaDownload /> Download Resume
           </motion.a>
 
-          {/* Contact */}
           <motion.a
             href="#contact"
             whileHover={{ scale: 1.05 }}
@@ -70,20 +68,23 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="flex-1 flex justify-center items-center relative z-10"
       >
-        {/* Glow */}
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-400/20 to-transparent rounded-3xl blur-2xl"></div>
+        
+        {/* Soft Glow */}
+        <div className="absolute w-80 h-96 rounded-3xl bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 blur-2xl opacity-30"></div>
 
-        <div className="relative">
-          {/* Frame */}
-          <div className="absolute -inset-4 bg-gradient-to-br from-emerald-400/30 to-emerald-400/10 rounded-3xl"></div>
-
-          {/* Image */}
+        {/* 5px Gradient Border */}
+        <div className="relative p-[5px] rounded-3xl bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">
           <img
             src={placeholder}
             alt="Headshot"
-            className="relative w-64 h-72 sm:w-72 sm:h-80 md:w-80 md:h-96 rounded-2xl object-cover shadow-2xl border-2 border-emerald-400/80"
+            className="
+              w-64 h-72 sm:w-72 sm:h-80 md:w-80 md:h-96
+              rounded-3xl object-cover
+              bg-gray-900
+            "
           />
         </div>
+
       </motion.div>
     </section>
   );
