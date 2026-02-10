@@ -55,7 +55,7 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
             className="flex items-center justify-center gap-2 border-2 border-accent px-8 py-3 rounded-lg text-accent font-bold hover:bg-accent/5 transition"
           >
-            <FaEnvelope /> Get in Touch
+            <FaEnvelope /> Contact Me
           </motion.a>
 
         </div>
@@ -78,7 +78,7 @@ export default function Hero() {
             src={placeholder}
             alt="Headshot"
             className="
-              w-64 h-72 sm:w-72 sm:h-80 md:w-80 md:h-96
+              w-64 h-100 sm:w-72 sm:h-80 md:w-80 md:h-96
               rounded-3xl object-cover
               bg-gray-900
             "
