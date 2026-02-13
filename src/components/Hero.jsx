@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaDownload, FaEnvelope } from 'react-icons/fa';
-import placeholder from '../assets/headshot-placeholder.png';
+import placeholder from '../assets/l1.jpeg';
 
 export default function Hero() {
   return (
@@ -73,17 +73,21 @@ export default function Hero() {
         <div className="absolute w-80 h-96 rounded-3xl bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 blur-2xl opacity-30"></div>
 
         {/* 5px Gradient Border */}
-        <div className="relative p-[5px] rounded-3xl bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">
-          <img
-            src={placeholder}
-            alt="Headshot"
-            className="
-              w-64 h-100 sm:w-72 sm:h-80 md:w-80 md:h-96
-              rounded-3xl object-cover
-              bg-gray-900
-            "
-          />
-        </div>
+<div className="relative p-[5px] rounded-3xl bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">
+  
+ 
+ <div className="w-72 aspect-[3/4] rounded-3xl overflow-hidden">
+  <img
+    src={placeholder}
+    alt="Headshot"
+    className="w-full h-full object-cover object-center"
+  />
+</div>
+
+
+</div>
+
+
 
       </motion.div>
     </section>
