@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaDownload, FaEnvelope } from 'react-icons/fa';
-import placeholder from '../assets/l1.jpeg';
+import placeholder from '../assets/headshot-placeholder.png';
 
 export default function Hero() {
   return (
