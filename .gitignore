@@ -1,6 +1,6 @@
 # Node modules
 node_modules/
-src/assets/headshot.jpeg
+src/assets/headshot.png
 
 # Logs
 logs/
