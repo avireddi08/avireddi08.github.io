@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaDownload, FaEnvelope } from 'react-icons/fa';
+import headshot from '../assets/headshot.jpeg';
 
 export default function Hero() {
   return (
@@ -76,7 +77,7 @@ export default function Hero() {
 
           <div className="w-72 aspect-[5/7] rounded-3xl overflow-hidden">
             <img
-              src="src/assets/headshot.jpeg"
+              src={headshot}
               alt="Headshot"
               className="w-full h-full object-contain"
             />
